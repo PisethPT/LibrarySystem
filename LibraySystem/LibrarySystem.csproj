@@ -52,6 +52,7 @@
     <Compile Include="Library System.Designer.cs">
       <DependentUpon>Library System.cs</DependentUpon>
     </Compile>
+    <Compile Include="nEWWW\Customer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControls\Order.cs">
