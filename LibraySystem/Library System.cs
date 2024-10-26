@@ -16,5 +16,7 @@ namespace LibraySystem
 		{
 			InitializeComponent();
 		}
+		public void Read()
+		{ }
 	}
 }
