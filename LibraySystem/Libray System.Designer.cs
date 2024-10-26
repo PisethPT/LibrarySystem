@@ -1,6 +1,6 @@
 ﻿namespace LibraySystem
 {
-	partial class Form1
+	partial class Libray_System
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -30,13 +30,13 @@
 		{
 			this.SuspendLayout();
 			// 
-			// Form1
+			// Libray_System
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(959, 504);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.ClientSize = new System.Drawing.Size(927, 450);
+			this.Name = "Libray_System";
+			this.Text = "Libray System";
 			this.ResumeLayout(false);
 
 		}
@@ -44,4 +44,3 @@
 		#endregion
 	}
 }
-
