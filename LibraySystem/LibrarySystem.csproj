@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UserControls\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
