@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35209.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraySystem", "LibraySystem\LibraySystem.csproj", "{34ABF97D-537D-46F1-A90B-61E7CE328185}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarySystem", "LibraySystem\LibrarySystem.csproj", "{34ABF97D-537D-46F1-A90B-61E7CE328185}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

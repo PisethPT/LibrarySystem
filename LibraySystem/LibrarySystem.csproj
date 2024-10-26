@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Libray System.cs">
+    <Compile Include="Library System.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Libray System.Designer.cs">
-      <DependentUpon>Libray System.cs</DependentUpon>
+    <Compile Include="Library System.Designer.cs">
+      <DependentUpon>Library System.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Libray System.resx">
-      <DependentUpon>Libray System.cs</DependentUpon>
+    <EmbeddedResource Include="Library System.resx">
+      <DependentUpon>Library System.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

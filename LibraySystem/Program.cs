@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using LibraySystem;
+using System;
 using System.Windows.Forms;
 
-namespace LibraySystem
+namespace LibrarySystem
 {
 	internal static class Program
 	{
@@ -16,7 +14,7 @@ namespace LibraySystem
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			Application.Run(new Library_System());
 		}
 	}
 }

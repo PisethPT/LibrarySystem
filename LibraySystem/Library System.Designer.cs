@@ -1,6 +1,6 @@
 ﻿namespace LibraySystem
 {
-	partial class Libray_System
+	partial class Library_System
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -30,13 +30,13 @@
 		{
 			this.SuspendLayout();
 			// 
-			// Libray_System
+			// Library_System
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(927, 450);
-			this.Name = "Libray_System";
-			this.Text = "Libray System";
+			this.Name = "Library_System";
+			this.Text = "Library System";
 			this.ResumeLayout(false);
 
 		}
