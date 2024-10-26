@@ -61,6 +61,7 @@
     <Compile Include="UserControls\Order.Designer.cs">
       <DependentUpon>Order.cs</DependentUpon>
     </Compile>
+    <Compile Include="yexy\oder.cs" />
     <EmbeddedResource Include="Library System.resx">
       <DependentUpon>Library System.cs</DependentUpon>
     </EmbeddedResource>
