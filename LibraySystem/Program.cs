@@ -1,4 +1,4 @@
-﻿using LibraySystem;
+﻿using LibrarySystem.Views;
 using System;
 using System.Windows.Forms;
 
@@ -14,7 +14,7 @@ namespace LibrarySystem
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Library_System());
+			Application.Run(new Main_Page());
 		}
 	}
 }

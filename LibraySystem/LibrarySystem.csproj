@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +55,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Author.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Book.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BookAuthor.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BookIssue.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BookRequest.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Category.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Entity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Entity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Entity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entity.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Member.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Pro_GetCategory_Result.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Publisher.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Staff.cs">
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Compile>
     <Compile Include="Library System.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +113,18 @@
     </Compile>
     <Compile Include="UserControls\Order.Designer.cs">
       <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Main_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Main_Page.Designer.cs">
+      <DependentUpon>Main_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modify_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modify_Book.Designer.cs">
+      <DependentUpon>Modify_Book.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Library System.resx">
       <DependentUpon>Library System.cs</DependentUpon>
@@ -75,6 +141,17 @@
     <EmbeddedResource Include="UserControls\Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Main_Page.resx">
+      <DependentUpon>Main_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Data\Entity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Entity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data\Entity.edmx.diagram">
+      <DependentUpon>Entity.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,7 +166,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Entity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Entity.edmx</DependentUpon>
+      <LastGenOutput>Entity.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\Entity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Entity.edmx</DependentUpon>
+      <LastGenOutput>Entity.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="04e545466e9c499aac59d2e4e5511ad6" Name="Diagram1">
+        <EntityTypeShape EntityType="BookLibraryModel.Author" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookLibraryModel.Category" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookLibraryModel.Publisher" Width="1.5" PointX="4.75" PointY="0.875" />
+        <EntityTypeShape EntityType="BookLibraryModel.Book" Width="1.5" PointX="3" PointY="7.625" />
+        <EntityTypeShape EntityType="BookLibraryModel.BookIssue" Width="1.5" PointX="5.25" PointY="4" />
+        <EntityTypeShape EntityType="BookLibraryModel.BookRequest" Width="1.5" PointX="3" PointY="4" />
+        <EntityTypeShape EntityType="BookLibraryModel.Member" Width="1.5" PointX="0.75" PointY="4.25" />
+        <EntityTypeShape EntityType="BookLibraryModel.Staff" Width="1.5" PointX="0.75" PointY="7.5" />
+        <AssociationConnector Association="BookLibraryModel.FK__Book__CategoryId__3E52440B" />
+        <AssociationConnector Association="BookLibraryModel.FK__Book__PublisherI__3F466844" />
+        <AssociationConnector Association="BookLibraryModel.FK__BookIssue__BookI__4AB81AF0" />
+        <AssociationConnector Association="BookLibraryModel.FK__BookIssue__Reque__49C3F6B7" />
+        <AssociationConnector Association="BookLibraryModel.FK__BookReque__Membe__45F365D3" />
+        <AssociationConnector Association="BookLibraryModel.FK__BookReque__Staff__46E78A0C" />
+        <EntityTypeShape EntityType="BookLibraryModel.BookAuthor" Width="1.5" PointX="3" PointY="11.875" />
+        <AssociationConnector Association="BookLibraryModel.FK__BookAutho__Autho__4D94879B" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
